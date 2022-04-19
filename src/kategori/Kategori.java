@@ -2,18 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package lastik;
-
-
+package kategori;
 
 /**
  *
- * @author Oguzhan
+ * @author AHMET FARUK
  */
-public interface Lastik {
-    String getModel();
-    int getGenislik();
-    int getYukseklik();
-    int getJantCapi();
+public interface Kategori {
+    String getLastikTuru();
+    String getAractipi();
     
 }

@@ -2,7 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lastik;
+package ürün;
+
+import kategori.Kategori;
+import kategori.KisLastigiFactory;
+import kategori.YazLastigiFactory;
 
 /**
  *
@@ -10,6 +14,15 @@ package lastik;
  */
 public class LastikBayisi {
     public static void main(String[] args) {
+        KisLastigiFactory kisLastigiFactory = new KisLastigiFactory();
+        Kategori kisLastigi = kisLastigiFactory.getKategori("Kış lastiği", "Suv");
+        
+        YazLastigiFactory yazLastigiFactory = new YazLastigiFactory(); 
+        Kategori yazLastigi = yazLastigiFactory.getKategori("yaz lastiği", "binek");
+        
+        System.out.println(kisLastigi);
+        System.out.println(yazLastigi);
+        
         AtractaLastikFabrikasi atractaLastikFabrikasi = new AtractaLastikFabrikasi();
         Lastik atractaLastik = atractaLastikFabrikasi.getLastik("atracta", 185, 70, 13);
 
@@ -18,6 +31,9 @@ public class LastikBayisi {
 
         System.out.println(atractaLastik);
         System.out.println(driwaysLastik);
+
+        
+        
     }
     
 }

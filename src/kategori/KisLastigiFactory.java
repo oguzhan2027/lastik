@@ -2,18 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lastik;
+package kategori;
 
 /**
  *
  * @author AHMET FARUK
  */
-public class AtractaLastikFabrikasi implements LastikFactory {
+public class KisLastigiFactory implements KategoriFactory {
 
     @Override
-    public Lastik getLastik(String model, int genislik, int yukseklik, int jantcapi) {
-         return new AtractaLastik(model,genislik,yukseklik,jantcapi);
-
+    public Kategori getKategori(String LastikTuru, String AracTipi) {
+        return (Kategori) new KisLastigi(LastikTuru,AracTipi);
     }
     
 }
