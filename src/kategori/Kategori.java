@@ -6,7 +6,7 @@ package kategori;
 
 /**
  *
- * @author AHMET FARUK
+ * @author oguzhan
  */
 public interface Kategori {
     String getLastikTuru();

@@ -6,7 +6,7 @@ package kategori;
 
 /**
  *
- * @author AHMET FARUK
+ * @author oguzhan
  */
 public interface KategoriFactory {
     Kategori getKategori(String LastikTuru,String AracTipi); 

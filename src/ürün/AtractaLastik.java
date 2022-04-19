@@ -6,7 +6,7 @@ package ürün;
 
 /**
  *
- * @author AHMET FARUK
+ * @author oguzhan
  */
 public class AtractaLastik implements Lastik{
     
